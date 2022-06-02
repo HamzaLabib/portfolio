@@ -11176,6 +11176,20 @@ nav.page-navbar.affix .navbar-brand .text-dark {
   margin: 0;
 }
 
+.footer-photo {
+  background: #efefef url(../imgs/footer.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  position: relative;
+  height: 300px;
+  width: 550px;
+  border-radius: 10%;
+  position: relative;
+}
+
 .header {
   background: #efefef url(../imgs/header.jpg);
   background-size: cover;
@@ -11426,6 +11440,19 @@ section.height-auto {
   .about-wrapper .after {
     display: none;
   }
+}
+
+.about {
+  background: #efefef url(../imgs/about.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  position: relative;
+  height: 250px;
+  border-radius: 20%;
+  position: relative;
 }
 
 .img-wrapper {
