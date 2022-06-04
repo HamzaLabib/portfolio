@@ -11181,11 +11181,8 @@ nav.page-navbar.affix .navbar-brand .text-dark {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  text-align: center;
-  color: white;
-  position: relative;
   height: 300px;
-  width: 550px;
+  width: 520px;
   border-radius: 10%;
   position: relative;
 }
