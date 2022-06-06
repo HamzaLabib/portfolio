@@ -13,15 +13,20 @@
 
     <!-- Bootstrap + Creative Design main styles -->
 	<link rel="stylesheet" href="assets/css/creative-design.css">
-
 </head>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
+
     <!-- Page Navbar -->
     <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="navbar-brand" href="#"><strong class="text-primary">Hamza Mohamad</strong> <br><span class="text-dark">Game Developer</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <strong class="text-primary">Hamza Mohamad</strong><br>
+                <span class="text-dark">Game Developer</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -34,21 +39,21 @@
                         <a class="nav-link" href="#about">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact me</a>
                     </li>
                     <!--<li class="nav-item">
                         <a class="nav-link" href="#testmonial">Testmonial</a>
                     </li>-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact me</a>
-                    </li>
                     <li class="nav-item ml-md-4">
                         <a class="nav-link btn btn-primary" href="assets/files/Hamza Mohamad resume.pdf">Resume</a>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav><!-- End of Page Navbar -->   
+    </nav><!-- End of Page Navbar -->
 
     <!-- Page Header -->
     <header id="home" class="header">
@@ -57,9 +62,9 @@
             <h6>Hamza Mohamad</h6> 
             <h1>Game Developer</h1>
             <br>
-            <a class="btn btn-outline-light" href="assets/files/Hamza Mohamad resume.pdf">Resume</a> 
+            <a class="btn btn-outline-light" href="assets/files/Hamza Mohamad resume.pdf">Resume</a>
         </div>      
-    </header><!-- End of Page Header -->    
+    </header><!-- End of Page Header -->
     
     <!-- About Section -->
     <section id="about">
@@ -74,20 +79,19 @@
                         <div class="col">
                             <br><br><p class="title mb-3">Game Developer with experience in Unity VR & 3D & 2D,object-oriented programming, 
                                 optimization, debugging and writing clean code. Ability to learn quickly and use new programming languages, 
-                                tools and applications.</p><br><br>
+                                tools and applications.</p><a href="assets/files/Hamza Mohamad resume.pdf">Read More...</a><br><br>
                         </div>
                         <div class="col">
-                            <header id="home" class="about"></header>
+                            <header class="about"></header>
                         </div>
-                    </div><!-- End of Row -->                   
-                    <!--<a href="javascript:void(0)">Read More...</a>-->
+                    </div><!-- End of Row -->
                 </div>
-            </div><!-- End of About Wrapper -->         
-        </div>  <!-- End of Container-->        
+            </div><!-- End of About Wrapper -->
+        </div>  <!-- End of Container-->
      </section><!--End of about Section -->
 
-     <!-- Features Section -->
-    <section class="has-bg-img" id="features">
+     <!-- Projects Section -->
+    <section class="has-bg-img" id="projects">
         <div class="overlay"></div>
         <!-- Button trigger modal -->
         <a data-toggle="modal" href="#exampleModalCenter">
@@ -95,7 +99,8 @@
         </a>
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" 
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                      <iframe width="100%" height="450px" class="border-0" 
@@ -112,47 +117,43 @@
         <div class="container">
             <!-- row -->
             <div class="row justify-content-between align-items-center">
+                <div class="col-md-5">
+                    <h3 class="title mb-3">Siege Master</h3>
+                    <p>A PC & VR game</p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://github.com/CharlesViau/SiegeMaster">View on Github</a>
+                </div>
                 <div class="col-md-6">
                     <div class="img-wrapper">
                         <div class="after"></div>
                         <img src="assets/imgs/img-1.jpg" class="w-100" alt="About Us">
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <h6 class="title mb-3">Design 2</h6>
-                    
-                    <p>test</p>
-                    <p class="text-muted">test</p>
-                    <button class="btn btn-outline-primary btn-sm">View</button>
-                </div>
             </div>
             <!-- End of Row -->
-        </div>  
-        <!-- End of Container -->
-    </section><!-- End of Section -->   
+        </div><!-- End of Container -->
+    </section><!-- End of Section -->
 
     <!-- section -->
     <section>
         <!-- Container -->
         <div class="container">
             <!-- Row -->
-            <div class="row justify-content-between align-items-center">                
+            <div class="row justify-content-between align-items-center">
                 <div class="col-md-5">
-                    <h6 class="title mb-3">Design 2</h6>
-                    <p>test</p>
-                    <p class="text-muted">test</p>
-                    <button class="btn btn-outline-primary btn-sm">View</button>
-
+                    <h3 class="title mb-3">Get it & Get out</h3>
+                    <p>A VR game</p>
+                    <p class="text-muted"></p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://github.com/mattstg/GetItGetOut">View on Github</a>
                 </div>
                 <div class="col-md-6">
                     <div class="img-wrapper">
                         <div class="after right"></div>
-                        <img src="assets/imgs/img-2.jpg" class="w-100" alt="About Us">
-                    </div>                      
+                        <img src="assets/imgs/img-1.jpg" class="w-100" alt="About Us">
+                    </div>
                 </div>
-            </div><!-- End of Row -->           
-        </div><!-- End of Container-->      
-    </section><!-- End of Section -->  
+            </div><!-- End of Row -->    
+        </div><!-- End of Container-->
+    </section><!-- End of Section -->
 
     <!-- Section -->
     <section>
@@ -160,22 +161,62 @@
         <div class="container">
             <!-- Row -->
             <div class="row justify-content-between align-items-center">
+                <div class="col-md-5">
+                    <h3 class="title mb-3"> Simple Mario</h3>
+                    <p>A 2D game</p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://github.com/HamzaLabib/SimpleMario">View on Github</a>
+                </div>
                 <div class="col-md-6">
                     <div class="img-wrapper">
                         <div class="after"></div>
-                        <img src="assets/imgs/img-3.jpg" class="w-100" alt="About us">
+                        <img src="assets/imgs/img-1.jpg" class="w-100" alt="About us">
                     </div>
                 </div>
+            </div><!-- End of Row -->
+        </div><!-- End of Container-->
+    </section><!-- End of Section -->
+
+    <!-- Section -->
+    <section>
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row justify-content-between align-items-center">
                 <div class="col-md-5">
-                    <h6 class="title mb-3"> Design 2</h6>
-                    
-                    <p>test</p>
-                    <p class="text-muted">test</p>
-                    <button class="btn btn-outline-primary btn-sm">View</button>
+                    <h3 class="title mb-3"> On the run</h3>
+                    <p>An endless runner game</p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://github.com/HamzaLabib/OnTheRun">View on Github</a>
                 </div>
-            </div><!-- End of Row -->           
-        </div><!-- End of Container-->      
-    </section><!-- End of Section -->   
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <div class="after"></div>
+                        <img src="assets/imgs/img-1.jpg" class="w-100" alt="About us">
+                    </div>
+                </div>
+            </div><!-- End of Row -->
+        </div><!-- End of Container-->
+    </section><!-- End of Section -->
+
+    <!-- Section -->
+    <section>
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-5">
+                    <h3 class="title mb-3"> Simple Snake</h3>
+                    <p>A 2D game using console</p>
+                    <a class="btn btn-outline-primary btn-sm" href="https://github.com/HamzaLabib/SnakeGame">View on Github</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <div class="after"></div>
+                        <img src="assets/imgs/img-1.jpg" class="w-100" alt="About us">
+                    </div>
+                </div>
+            </div><!-- End of Row -->
+        </div><!-- End of Container-->
+    </section><!-- End of Section -->
 
     <!-- Testmonial Section -->
     <section class="text-center pt-5" id="testmonial">
@@ -208,8 +249,8 @@
                         <button class="btn btn-outline-primary btn-sm">View</button>
                     </div>
                 </div>
-            </div><!-- end of Row -->           
-        </div><!-- End of Cotanier -->  
+            </div><!-- end of Row -->
+        </div><!-- End of Cotanier -->
     </section><!-- End of Testmonial Section -->
 
     <!-- Contact Section -->
@@ -229,14 +270,17 @@
                             <a href="https://www.linkedin.com/in/hamzalabib/" class="link"><i class="ti-linkedin"></i></a>
                             <a href="https://www.instagram.com/labibshots/" class="link"><i class="ti-instagram"></i></a>
                             <a href="https://www.facebook.com/HamzaLibba/" class="link"><i class="ti-facebook"></i></a>
-                            <a href="https://twitter.com/HamzaLabib/" class="link"><i class="ti-twitter-alt"></i></a>                            
+                            <a href="https://twitter.com/HamzaLabib/" class="link"><i class="ti-twitter-alt"></i></a>
                         </div>
                         <br><br><br>
-                        <a href="#"><strong class="text-primary">Hamza Mohamad</strong> <br><span class="text-dark">Game Developer</span></a>
+                        <a href="#"><strong class="text-primary">
+                            Hamza Mohamad</strong><br>
+                            <span class="text-dark">Game Developer</span>
+                        </a>
                     </li>
                 </ul>
                     <image class="footer-photo"></image>
-            </div><!-- End of Pre footer -->            
+            </div><!-- End of Pre footer -->
         </div><!--End of Container -->
         <!-- foooter -->
         <footer class="footer">
