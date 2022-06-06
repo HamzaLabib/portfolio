@@ -11112,7 +11112,7 @@ nav.page-navbar.affix .navbar-brand .text-dark {
 .pre-footer .list {
   list-style-type: none;
   padding-left: 0;
-  width: calc(100% / 3);
+  width: calc(100% / 2);
   padding: 0 30px;
 }
 
@@ -11182,7 +11182,7 @@ nav.page-navbar.affix .navbar-brand .text-dark {
   background-position: center center;
   background-repeat: no-repeat;
   height: 300px;
-  width: 520px;
+  width: 468px;
   border-radius: 10%;
   position: relative;
 }
@@ -11513,3 +11513,4 @@ section.height-auto {
 .testmonial-wrapper .title {
   margin-top: -40px;
 }
+
