@@ -11284,10 +11284,10 @@ section.p-md {
 }
 
 section.has-bg-img {
-  background-image: url(../imgs/bg-img-1.jpg);
+  background-image: url(../imgs/bg-img-1.jpeg);
   background-size: cover;
   background-position: center;
-  min-height: 450px;
+  min-height: 300px;
   position: relative;
 }
 
@@ -11449,6 +11449,20 @@ section.height-auto {
   position: relative;
   height: 250px;
   border-radius: 20%;
+  position: relative;
+}
+
+.projects {
+  background: #efefef url(../imgs/img-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
   position: relative;
 }
 
