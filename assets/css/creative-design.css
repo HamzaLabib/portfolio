@@ -11444,7 +11444,7 @@ section.has-bg-img3 a i {
 }
 
 section.has-bg-img4 {
-  background-image: url(../imgs/onTheRun.png);
+  background-image: url(../imgs/runner.png);
   background-size: cover;
   background-position: center;
   min-height: 300px;
@@ -11482,7 +11482,6 @@ section.has-bg-img4 a i {
   border-bottom: 20px solid transparent;
   border-left: 30px solid #FAD02C;
 }
-
 
 section.height-auto {
   height: auto !important;
