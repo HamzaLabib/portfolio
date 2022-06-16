@@ -1,2 +1,2 @@
 # HamzaPortfolio
-My portfolio website
+My portfolio in gaming field
