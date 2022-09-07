@@ -29,4 +29,14 @@ $(document).ready(function(){
             });
         } 
     });
-}); 
+});
+
+let modal = document.querySelectorAll(".modal");
+modal.forEach((el, x) => {
+$(".modal").on("hidden.bs.modal", function (e) {
+var $iframes = $(e.target).find("iframe");
+$iframes.each(function (index, iframe, i) {
+$("iframe").contents().find("video")[x].pause();
+});
+});
+});
