@@ -31,23 +31,11 @@ $(document).ready(function(){
     });
 });
 
-// let modal = document.querySelectorAll(".modal");
-// modal.forEach((el, x) => {
-//     $(".modal").on("hidden.bs.modal", function (e) {
-//         var $videos = $(e.target).find("video");
-//         $videos.each(function (index, video, i) {
-//             $("video").contents().find("video")[x].pause();
-//         });
-//     });
-// });
-
-// Select all modal elements
-let modals = document.querySelectorAll(".modal");
-modals.forEach((modal) => {
-  modal.addEventListener("hidden.bs.modal", function (e) {
-    var videos = e.target.querySelectorAll("video");
-    videos.forEach((video) => {
-      video.pause();
+$(document).ready(function() {
+    $(".modal").on("hidden.bs.modal", function(e) {
+      var $video = $(this).find("video");
+      $video.each(function() {
+        this.pause();
+      });
     });
-  });
-});
+  });  
