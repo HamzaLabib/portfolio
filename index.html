@@ -332,17 +332,6 @@
                                 </div>
                             </div>
                         </div><!-- End of Modal -->
-
-                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                        <script>
-                            $(document).ready(function() {
-                                $('#exampleModalCenter').on('hidden.bs.modal', function() {
-                                    var videoPlayer = document.getElementById('videoPlayer');
-                                    videoPlayer.pause();
-                                });
-                            });
-                        </script>
-
                     </section>         
                 </div>
             </div><!-- End of Row -->
@@ -649,6 +638,18 @@
             </div><!-- End of Row -->
         </div><!-- End of Container-->
     </section><!-- End of Section -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.modal').on('hidden.bs.modal', function() {
+                var modalId = $(this).attr('id');
+                var videoPlayerId = 'videoPlayer' + modalId.charAt(modalId.length - 1);
+                var videoPlayer = document.getElementById(videoPlayerId);
+                videoPlayer.pause();
+            });
+        });
+    </script>
 
      <!-- Section -->
      <section>
