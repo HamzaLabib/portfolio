@@ -40,3 +40,14 @@ $(document).ready(function(){
 //         });
 //     });
 // });
+
+// Select all modal elements
+let modals = document.querySelectorAll(".modal");
+modals.forEach((modal) => {
+  modal.addEventListener("hidden.bs.modal", function (e) {
+    var videos = e.target.querySelectorAll("video");
+    videos.forEach((video) => {
+      video.pause();
+    });
+  });
+});
