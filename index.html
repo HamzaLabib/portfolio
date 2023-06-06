@@ -333,15 +333,16 @@
                             </div>
                         </div><!-- End of Modal -->
 
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
                         <script>
-                            var videoPlayer = document.getElementById('videoPlayer');
-                            var modal = document.getElementById('exampleModalCenter');
-                        
-                            modal.addEventListener('hide.bs.modal', function () {
-                                videoPlayer.pause();
+                            $(document).ready(function() {
+                                $('#exampleModalCenter').on('hidden.bs.modal', function() {
+                                    var videoPlayer = document.getElementById('videoPlayer');
+                                    videoPlayer.pause();
+                                });
                             });
                         </script>
-                        
+
                     </section>         
                 </div>
             </div><!-- End of Row -->
