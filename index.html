@@ -332,6 +332,16 @@
                                 </div>
                             </div>
                         </div><!-- End of Modal -->
+
+                        <script>
+                            var videoPlayer = document.getElementById('videoPlayer');
+                            var modal = document.getElementById('exampleModalCenter');
+                        
+                            modal.addEventListener('hide.bs.modal', function () {
+                                videoPlayer.pause();
+                            });
+                        </script>
+                        
                     </section>         
                 </div>
             </div><!-- End of Row -->
