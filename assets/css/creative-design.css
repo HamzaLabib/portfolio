@@ -11182,9 +11182,19 @@ nav.page-navbar.affix .navbar-brand .text-dark {
   background-position: center center;
   background-repeat: no-repeat;
   height: 300px;
-  width: 468px;
+  width: 100%;
+  max-width: 468px;
   border-radius: 10%;
-  position: relative;
+  position:relative;
+  margin: auto;
+  display: block;
+}
+
+@media (max-width: 767.98px) {
+  .footer-photo {
+    height: 200px;
+    width: 100%;
+  }
 }
 
 .header {
@@ -11721,7 +11731,7 @@ section.height-auto {
 
 .about {
   background: #efefef url(../imgs/about.png);
-  background-size: cover;
+  background-size:contain;
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
