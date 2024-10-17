@@ -11732,6 +11732,10 @@ section.height-auto {
   position: relative;
 }
 
+.row {
+  align-items: center;
+}
+
 .projects {
   background: url(../imgs/about1.png);
   background-size: cover;
