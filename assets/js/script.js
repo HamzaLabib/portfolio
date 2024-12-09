@@ -45,7 +45,7 @@ form.addEventListener('submit', function(event) {
 });
 
 // Handle quotes from an API
-let timerToChangeQuotes = 5000;
+let timerToChangeQuotes = 8000;
 let quotesArea = document.createElement('div');
 let quotesParent = document.getElementById('header');
 quotesParent.appendChild(quotesArea);
