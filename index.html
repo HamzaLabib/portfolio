@@ -7,9 +7,14 @@
     <title>Hamza - Software Engineer</title>
     <link href="assets/imgs/icon.jpg" rel="shortcut icon" type="image/jpg" alt="Website icon" />
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- To ensure that an HTML element isn't displayed until its CSS is loaded -->
+    <div id="loadOverlay"
+        style="background-color:#333; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;">
+    </div>
 
     <!-- Navbar -->
     <nav id="scrollspy" class="navbar page-navbar navbar-light navbar-expand-md fixed-top" data-spy="affix"
@@ -56,7 +61,7 @@
     <!-- Header -->
     <header id="home" class="header">
         <div class="header-background"></div>
-        <div class="header-content">
+        <div id="header" class="header-content">
             <h6>Hamza Labib</h6>
             <h2>Software Engineer</h2>
             <br>
@@ -769,10 +774,28 @@
             <div class="pre-footer">
                 <ul class="list">
                     <li class="list-head">
-                        <h6 class="font-weight-bold">CONTACT INFO</h6>
+                        <h6 class="font-weight-bold">CONTACT ME</h6>
                     </li>
                     <li class="list-body">
-                        <br><a class="ti-email" href="mailto:hamzah.labib@gmail.com">
+                        <div class="to-contact">
+                            <form id="contact-form" action="mailto:hamzah.labib@gmail.com" method="post">
+                                <div class="to-contact-item">
+                                    <input id="name" type="text" name="from_name" placeholder="Name" required>
+                                    <input id="email" type="email" name="from_email" placeholder="Email" required>
+                                    <textarea id="msg" name="message" placeholder="Message" required></textarea>
+                                </div>
+                                <br><button type="submit" class="btn btn-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-send-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471z" />
+                                    </svg>
+                                    Send</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="ti-email" href="mailto:hamzah.labib@gmail.com">
                             hamzah.labib@gmail.com</a>
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/hamzalabib/" class="link" target="_blank">
@@ -790,12 +813,15 @@
                                 </svg>
                             </a>
                         </div>
-                        <br><br><br>
+                    </li>
+                    <li>
+                        <br>
                         <a href="#"><strong class="text-primary">
                                 Hamza Labib</strong><br>
                             <span class="text-dark">Software Engineer</span>
                         </a>
                     </li>
+
                 </ul>
                 <img class="footer-photo">
             </div><!-- End of Pre footer -->
@@ -815,6 +841,7 @@
     <script src="assets/js/jquery/jquery-3.4.1.js"></script>
     <script src="assets/js/bootstrap/bootstrap.bundle.js"></script>
     <script src="assets/js/bootstrap/bootstrap.affix.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
