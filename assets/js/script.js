@@ -36,10 +36,10 @@ form.addEventListener('submit', function(event) {
     // Send the email 
     emailjs.sendForm('service_czz26fg', 'template_o9hfiwf', this)
     .then(function() {
-    console.log('SUCCESS!');
+    //console.log('SUCCESS!');
     alert('Your message has been sent successfully!');
     }, function(error) {
-    console.log('FAILED...', error);
+    //console.log('FAILED...', error);
     alert('Something went wrong. Please try again.');
     });
 });
@@ -68,7 +68,7 @@ async function quotesAPI(){
     const quote = data.quote;
     const author = data.author;
     quotesArea.innerHTML = `"${quote}"<br>- ${author}`;
-    console.log(`${quote} \n- ${author}`);
+    //console.log(`${quote} \n- ${author}`);
 }
 quotesAPI();
 setInterval(quotesAPI, timerToChangeQuotes);
