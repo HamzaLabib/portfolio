@@ -1643,6 +1643,10 @@ section.height-auto {
     background-image: url(../imgs/Shooting\ unreal.png);
 }
 
+.has-bg-img8 {
+    background-image: url(../imgs/EmoNestDemoVideo-Cover.png);
+}
+
 #projects {
     background-size: cover;
     background-position: center;
